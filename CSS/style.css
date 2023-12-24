@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+header {
+
+    text-align: center;
+    background: linear-gradient(0deg, rgba(67, 45, 32, 0.7) 0%, rgba(79, 50, 34, 0.5) 50%), url(../Images/pexels-burst-374631.jpg);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    min-height: 100vh; 
+}
+
+header .container {
+    max-width: 900px;
+    padding: 20px;
+}
+
+header h1 {
+    color: #fff;
+}
+
+header .btn-light {
+    background-color: #d3d4d5;
+}
+
+.form-control:focus {
+    border-color: rgb(67, 45, 32);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(67, 45, 32, 0.5)
+}
+
+.tabback {
+    text-align: center;
+    background: linear-gradient(0deg, rgba(67, 45, 32, 0.7) 0%, rgba(79, 50, 34, 0.5) 50%), url(../Images/pexels-burst-374631.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.table-striped {
+    font-family: 'Ubuntu', sans-serif;
+}

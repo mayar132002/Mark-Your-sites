@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- !fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- !bootstrap -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- !sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- !my style -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header class="d-flex justify-content-center align-items-center">
+
+
+        <div class="container">
+
+
+            <h1>ALL SAVED SITES HERE YOU CAN GO TO IT FROM HERE EASLY</h1>
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>Site Name</th>
+                        <th>Site URL</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="data">
+
+                </tbody>
+
+            </table>
+            <div class="col-12 pt-3">
+                <input data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit" id="addButton"
+                    class="btn btn-light px-5" value="Add New Site">
+            </div>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add Site You Want Save</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="row g-3 needs-validation pt-4" novalidate>
+                                <div class="col-md-6 position-relative">
+                                    <input id="name" placeholder="Your Site Name" type="text" class="form-control"
+                                        id="validationTooltip01" required>
+                                </div>
+                                <div class="col-md-6 position-relative">
+                                    <input id="url" placeholder="https://example.com" pattern="https://.*" size="30"
+                                        type="text" class="form-control" id="validationTooltip02" required>
+                                    <div class="invalid-tooltip p-4">
+                                        please type a correct URL
+                                    </div>
+                                </div>
+
+                                <div class="col-12 pt-3">
+                                    <input onclick="addURL()" type="submit" id="addButton" class="btn btn-light px-5"
+                                        value="Save Your Site">
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+         
+
+        </div>
+
+
+    </header>
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
